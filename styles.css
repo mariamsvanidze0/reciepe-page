@@ -1,0 +1,240 @@
+@font-face {
+    font-family: mainfont;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mainfont;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(30, 54%, 90%);
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+}
+.wrapper-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+    gap: 20px;
+    border-radius: 15px;
+}
+.wrapper-div img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+.wrapper-div h1 {
+    font-family: font;
+    font-size: 25px;
+}
+.wrapper-div p {
+    font-size: 10px;
+    color: hsl(30, 10%, 34%);
+}
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding-left: 15px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.preparation h4 {
+    color: hsl(332, 51%, 32%);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.preparation ul {
+    margin-top: 10px;
+}
+.preparation ul li {
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    font-size: 10px;
+    color: hsl(30, 10%, 34%);
+}
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: font;
+    padding-bottom: 15px;
+}
+.ingredients ul li,
+.instructions ol li {
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    font-size: 9.5px;
+    color: hsl(30, 10%, 34%);
+}
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+.label {
+    width: 100px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 9.5px;
+    color: hsl(30, 10%, 34%);
+}
+.value {
+    margin: 0;
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 50px;
+    font-size: 9.5px;
+    color: hsl(14, 45%, 36%);
+}
+.attribution {
+    color: hsl(30, 10%, 34%);
+    margin: 10px auto;
+}
+.attribution a {
+    color: hsl(14, 45%, 36%);
+    text-decoration: none;
+    margin-left: 10px;
+}
+@media (max-width: 375px) {
+    body {
+        background-color: transparent;
+    }
+    .wrapper-div {
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 50px;
+    }
+    .wrapper-div h1 {
+        font-size: 20px;
+    }
+    .label {
+        width: 70px;
+        font-size: 8px;
+    }
+    .value {
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .ingredients ul li,
+    .instructions ol li,
+    .preparation ul li {
+        font-size: 8px;
+    }
+    .wrapper-div img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .wrapper-div {
+        padding: 15px;
+        margin-top: 50px;
+    }
+    .label {
+        width: 60px;
+        font-size: 8px;
+    }
+    .value {
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .wrapper-div h1 {
+        font-size: 18px;
+    }
+    .ingredients ul li,
+    .instructions ol li,
+    .preparation ul li {
+        font-size: 8px;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper-div {
+        max-width: 450px;
+        padding: 20px;
+    }
+    .wrapper-div h1 {
+        font-size: 20px;
+    }
+    .label {
+        width: 80px;
+        font-size: 9px;
+    }
+    .value {
+        padding-left: 20px;
+        font-size: 9px;
+    }
+    .ingredients ul li,
+    .instructions ol li,
+    .preparation ul li {
+        font-size: 8.5px;
+    }
+    .wrapper-div img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .wrapper-div {
+        max-width: 450px;
+        padding: 30px;
+    }
+    .wrapper-div h1 {
+        font-size: 22px;
+    }
+    .label {
+        width: 90px;
+        font-size: 9px;
+    }
+    .value {
+        padding-left: 30px;
+        font-size: 9px;
+    }
+    .ingredients ul li,
+    .instructions ol li,
+    .preparation ul li {
+        font-size: 9px;
+    }
+}
+@media (max-width: 1440px) {
+    .wrapper-div {
+        max-width: 450px;
+        padding: 40px;
+    }
+    .wrapper-div h1 {
+        font-size: 25px;
+    }
+    .label {
+        width: 100px;
+        font-size: 10px;
+    }
+    .value {
+        padding-left: 50px;
+        font-size: 10px;
+    }
+    .ingredients ul li,
+    .instructions ol li,
+    .preparation ul li {
+        font-size: 10px;
+    }
+}
